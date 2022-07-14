@@ -1,0 +1,20 @@
+{
+  "message": "salom i18n !!",
+  "navbar": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "contact": "Kontaktlar"
+  },
+  "hero": {
+    "title": "Chiroyli yog'och siding",
+    "subtitle": "Arxitekturangizni yaxshilang",
+    "text": "Bizning tashqi siding mahsulotlarimiz bilan turar-joy yoki tijorat mulkingizga o'ziga xos ko'rinish bering",
+    "button": "ko'proq ma'lumot olish"
+  },
+  "exterior": {
+    "title": "Go'zallik Chidamlilik Bilan Uchrashadigan Joyda",
+    "subtitle": "Yaxshilangan Tashqi Mahsulotlar",
+    "text": "Biz quruvchilar, arxitektorlar, dizaynerlar va uy egalariga o'z me'morchiligini mustahkamlashda yordam berish missiyasidamiz.",
+    "button": "biz haqimizda ko'proq"
+  }
+}

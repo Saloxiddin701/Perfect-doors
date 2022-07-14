@@ -1,30 +1,47 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <Navbar/>
   <router-view/>
 </template>
 
+<script>
+import { mapActions } from 'vuex'
+import Navbar from "@/components/navbar";
+
+export default {
+  components: {Navbar},
+  methods: {
+    ...mapActions('ui', ['CHANGE_WINDOW_WIDTH']),
+    changeWindowWidth() {
+      this.CHANGE_WINDOW_WIDTH(window.innerWidth)
+    }
+  },
+  mounted() {
+    this.changeWindowWidth()
+    window.addEventListener('resize', this.changeWindowWidth)
+  },
+}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  padding: 30px;
+.row{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  @media screen and (max-width: 768px) {
+    max-width: 425px;
+  }
+  @media screen and (max-width: 425px) {
+    max-width: 375px;
+  }
+  @media screen and (max-width: 375px) {
+    max-width: 320px;
   }
 }
 </style>
