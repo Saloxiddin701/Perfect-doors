@@ -2,8 +2,8 @@
   <header class="header" :class="{ active: is_scrolled }">
     <nav class="row">
       <div class="logo">
-        <img v-if="!is_scrolled" class="xl:w-60 md:w-56 sm:w-52 xs:w-48" src="@/assets/images/logo.svg" alt="">
-        <img v-else class="xl:w-60 md:w-56 sm:w-52 xs:w-48" src="@/assets/images/logo2.svg" alt="">
+        <img v-if="!is_scrolled" class="w-60" src="@/assets/images/logo.svg" alt="">
+        <img v-else class="w-60" src="@/assets/images/logo2.svg" alt="">
       </div>
       <ul class="menu" v-if="!is_mobile">
         <li>{{ $t('navbar.home') }}</li>
@@ -13,7 +13,7 @@
         <dropdown/>
       </ul>
 
-      <div class="flex items-center xl:gap-10 md:gap-6 xs:gap-4" v-if="is_mobile">
+      <div class="flex items-center lg:gap-4 md:gap-2 xs:gap-1" v-if="is_mobile">
         <div class="burger" @click="is_open = !is_open" v-if="is_mobile">
           <span v-if="!is_open">&#9776;</span>
           <span v-else>&#10006;</span>

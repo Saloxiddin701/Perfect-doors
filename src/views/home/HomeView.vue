@@ -23,16 +23,16 @@
         pl-36 pt-56 w-1/2 h-full
         -translate-y-1/2 z-10
         text-white
-        md:pl-32 md:pt-52
-        xs:pl-16 xs:pt-40 lg:w-1/2 xs:w-full
+        md:pl-32 lg:pt-40
+        xs:pl-16 xs:pt-40 lg:w-1/2 md:w-full
         pointer-events-none
         titles"
     >
       <div class="flex flex-col w-full">
-        <h2 class="title sm:text-2xl md:text-2xl xs:text-xl">{{ $t('hero.title') }}</h2>
-        <h2 class="subtitle text-7xl sm:text-5xl md:text-7xl xs:text-4xl">{{ $t('hero.subtitle') }}</h2>
+        <h2 class="title lg:text-2xl">{{ $t('hero.title') }}</h2>
+        <h2 class="subtitle text-7xl lg:text-5xl md:text-7xl xs:text-4xl">{{ $t('hero.subtitle') }}</h2>
         <p class="text mt-6">{{ $t('hero.text') }}</p>
-        <a href="#" class="border border-white rounded-r-3xl w-1/2 text-center p-2 mt-4 uppercase">{{ $t('hero.button') }}</a>
+        <a href="#" class="border border-white rounded-r-3xl w-1/2 text-center p-2 mt-4 lg:p-1 lg:text-sm uppercase">{{ $t('hero.button') }}</a>
       </div>
     </div>
   </section>

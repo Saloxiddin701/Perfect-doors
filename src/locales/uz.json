@@ -16,5 +16,11 @@
     "subtitle": "Yaxshilangan Tashqi Mahsulotlar",
     "text": "Biz quruvchilar, arxitektorlar, dizaynerlar va uy egalariga o'z me'morchiligini mustahkamlashda yordam berish missiyasidamiz.",
     "button": "biz haqimizda ko'proq"
+  },
+  "products": {
+    "head": {
+      "title": "Yuqori tashqi mahsulotlar",
+      "button": "barcha mahsulotlarni ko'rish"
+    }
   }
 }
