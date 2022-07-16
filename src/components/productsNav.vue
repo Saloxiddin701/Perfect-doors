@@ -2,14 +2,14 @@
   <header class="header" :class="{ active: is_scrolled }">
     <nav class="row">
       <div class="logo">
-        <img v-if="!is_scrolled" class="w-60" src="@/assets/images/logo.svg" alt="">
-        <img v-else class="w-60" src="@/assets/images/logo2.svg" alt="">
+        <img v-if="!is_scrolled" class="w-60" src="@/assets/images/logo2.svg" alt="">
+        <img v-else class="w-60" src="@/assets/images/logo.svg" alt="">
       </div>
       <ul class="menu" v-if="!is_mobile">
         <router-link to="/">{{ $t('navbar.home') }}</router-link>
         <router-link to="/about">{{ $t('navbar.about') }}</router-link>
         <router-link to="/contact">{{ $t('navbar.contact') }}</router-link>
-        <button class="border border-2 border-white text-white p-1" :class="{ 'text-dark border-dark': is_scrolled }"><a href="tel:+998998774212">+998998774212</a></button>
+        <button class="border border-2 border-dark text-dark p-1" :class="{ 'text-white border-white': is_scrolled }"><a href="tel:+998998774212">+998998774212</a></button>
         <dropdown/>
       </ul>
 
@@ -77,15 +77,15 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 50px 0;
+  padding: 20px 0;
   transition: 0.5s;
   z-index: 999;
-  color: #ffffff;
+  color: #000000;
 
   &.active {
-    background: rgba(255, 255, 255, 0.7);
+    background: #000000;
     backdrop-filter: blur(5px);
-    color: #000000;
+    color: #ffffff;
     padding: 25px 0;
   }
 
