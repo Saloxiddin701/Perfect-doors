@@ -29,7 +29,7 @@
             <img class="object-cover w-full h-40 md:h-full img1" src="@/assets/images/product4.jpg"
                  alt="">
             <div
-                class="absolute z-10 left-0 top-0 md:top-24 -translate-y-1/2 w-full h-40 pt-16 pl-20 py-5 md:pl-6 rounded-tr-[100px] rounded-bl-[100px] item1">
+                class="absolute z-10 left-0 top-0 md:top-20 -translate-y-1/2 w-full h-full px-16 py-16 md:pt-24 md:pl-6 item1">
               <h1 class="text-white">Some title</h1>
               <button class="border border-gray p-2 uppercase mt-2 rounded-r-3xl text-gray md:text-xs md:p-1">{{
                   $t('products.head.button')

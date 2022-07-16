@@ -1,11 +1,11 @@
 <template>
   <section class="exterior py-10">
     <div class="row">
-      <div class="flex justify-between items-center flex-wrap py-8">
+      <div class="flex justify-between items-center flex-wrap py-8 md:justify-center">
         <!--left-->
         <div class="left relative">
-          <img class="w-96 h-96 object-cover rounded-tr-[100px] rounded-bl-[100px]" src="@/assets/images/product1.jpg" alt="">
-          <img class="rounded-tl-[100px] rounded-br-[100px] absolute top-1/2 left-1/2 w-60 h-60 object-cover" src="@/assets/images/product2.jpg" alt="">
+          <img class="w-96 h-96 object-cover rounded-tr-[100px] rounded-bl-[100px] md:w-60 md:h-60" src="@/assets/images/product1.jpg" alt="">
+          <img class="rounded-tl-[100px] rounded-br-[100px] absolute top-1/2 left-1/2 w-60 h-60 object-cover md:w-40 md:h-40" src="@/assets/images/product2.jpg" alt="">
         </div>
 
         <!--right-->
