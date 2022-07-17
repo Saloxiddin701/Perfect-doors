@@ -20,10 +20,10 @@
         </div>
 
         <ul class="mobile-menu" :class="{ active: is_open }">
-          <router-link to="/">{{ $t('navbar.home') }}</router-link>
-          <router-link to="/about">{{ $t('navbar.about') }}</router-link>
-          <router-link to="/contact">{{ $t('navbar.contact') }}</router-link>
-          <button class="border border-2 border-white text-dark p-1"><a href="tel:+998998774212">+998998774212</a></button>
+          <router-link class="text-dark py-3 text-xl" to="/">{{ $t('navbar.home') }}</router-link>
+          <router-link class="text-dark py-3 text-xl" to="/about">{{ $t('navbar.about') }}</router-link>
+          <router-link class="text-dark py-3 text-xl" to="/contact">{{ $t('navbar.contact') }}</router-link>
+          <button class="border border-2 border-dark text-dark p-1"><a href="tel:+998998774212">+998998774212</a></button>
         </ul>
         <dropdown/>
       </div>
