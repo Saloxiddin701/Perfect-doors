@@ -9,7 +9,7 @@
         <router-link to="/">{{ $t('navbar.home') }}</router-link>
         <router-link to="/about">{{ $t('navbar.about') }}</router-link>
         <router-link to="/contact">{{ $t('navbar.contact') }}</router-link>
-        <button class="border border-2 border-dark text-dark p-1" :class="{ 'text-white border-white': is_scrolled }"><a href="tel:+998998774212">+998998774212</a></button>
+        <button class="border border-2 border-dark text-dark p-1" :class="{ '!text-white !border-white': is_scrolled }"><a href="tel:+998998774212">+998998774212</a></button>
         <dropdown/>
       </ul>
 
