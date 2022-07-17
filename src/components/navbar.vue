@@ -77,7 +77,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 50px 0;
+  padding: 20px 0;
   transition: 0.5s;
   z-index: 999;
   color: #ffffff;
