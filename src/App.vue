@@ -1,20 +1,39 @@
 <template>
+  <loader v-if="!is_loaded"/>
   <router-view/>
 </template>
 
 <script>
 import { mapActions } from 'vuex'
+import loader from '@/components/loader'
 
 export default {
+  data() {
+    return {
+      is_loaded: false
+    }
+  },
+  components: { loader },
+  created() {
+    document.body.style.overflow = 'hidden'
+  },
+  mounted() {
+    document.onreadystatechange = () => {
+      if (document.readyState == 'complete') {
+        this.is_loaded = true
+      }
+    }
+    document.body.style.overflow = 'auto'
+
+    //
+    this.changeWindowWidth()
+    window.addEventListener('resize', this.changeWindowWidth)
+  },
   methods: {
     ...mapActions('ui', ['CHANGE_WINDOW_WIDTH']),
     changeWindowWidth() {
       this.CHANGE_WINDOW_WIDTH(window.innerWidth)
     }
-  },
-  mounted() {
-    this.changeWindowWidth()
-    window.addEventListener('resize', this.changeWindowWidth)
   },
 }
 </script>
