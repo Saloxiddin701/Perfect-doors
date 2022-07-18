@@ -2,12 +2,12 @@
   <div class="footerNav w-1/2 mt-6">
     <div class="row">
       <ul class="list-none flex justify-between items-center flex-wrap lg:justify-center lg:gap-2">
-        <li>Home</li>
-        <li>About</li>
-        <li>Products</li>
-        <li>Design Inspiration</li>
-        <li>Request a quote</li>
-        <li>Contact</li>
+        <li>{{ $t('navbar.home') }}</li>
+        <li>{{ $t('navbar.about') }}</li>
+        <li>{{ $t('navbar.products') }}</li>
+        <li>{{ $t('navbar.design') }}</li>
+        <li>{{ $t('navbar.request') }}</li>
+        <li>{{ $t('navbar.contact') }}</li>
       </ul>
     </div>
   </div>

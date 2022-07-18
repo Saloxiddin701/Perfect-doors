@@ -2,8 +2,8 @@
   <section class="top-products py-10 bg-[url('@/assets/images/bg5.jpg')]">
     <div class="row">
       <div class="head text-center flex flex-col items-center">
-        <h3 class="text-2xl">Unlike Anything Else</h3>
-        <h1 class="text-7xl mb-4">Top Exterior Products</h1>
+        <h3 class="text-2xl">{{ $t('unlike') }}</h3>
+        <h1 class="text-7xl mb-4">{{ $t('top_products') }}</h1>
       </div>
       <div class="box">
         <div class="item flex justify-between items-center flex-wrap my-6 even:flex-row-reverse" v-for="item in items" :key="item.id">
@@ -13,7 +13,7 @@
             <h1>{{ item.title }}</h1>
             <p>{{ item.text }}</p>
             <button class="text-left flex items-center uppercase mt-3">
-              view product
+              {{ $t('view_btn') }}
             </button>
           </div>
         </div>

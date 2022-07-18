@@ -4,15 +4,15 @@
       <div class="box flex justify-between items-center flex-wrap">
         <!--left-->
         <div class="w-[45%]">
-          <h1 class="text-2xl">Where Beauty Meets durability</h1>
-          <h1 class="text-5xl text-brand">Enhanced Exterior Products</h1>
+          <h1 class="text-2xl">{{ $t('exterior.title') }}</h1>
+          <h1 class="text-5xl text-brand">{{ $t('exterior.subtitle') }}</h1>
           <p class="mt-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deleniti distinctio ea eius harum illum non,
             veniam voluptate? Consequuntur debitis dicta ex excepturi harum iste nulla officiis possimus voluptates
             voluptatibus?
           </p>
           <button class="text-left flex items-center uppercase mt-3">
-            more about us
+            {{ $t('exterior.button') }}
             <span class="ml-5 border-2 border-gray rounded-full px-2">&#10095;</span>
           </button>
         </div>

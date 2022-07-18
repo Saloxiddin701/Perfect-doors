@@ -3,7 +3,10 @@
   "navbar": {
     "home": "Bosh sahifa",
     "about": "Biz haqimizda",
-    "contact": "Kontaktlar"
+    "contact": "Kontaktlar",
+    "products": "Mahsulotlar",
+    "design": "Dizayn ilhomi",
+    "request": "Narx so'rash"
   },
   "hero": {
     "title": "Chiroyli yog'och siding",
@@ -22,5 +25,22 @@
       "title": "Yuqori tashqi mahsulotlar",
       "button": "barcha mahsulotlarni ko'rish"
     }
-  }
+  },
+  "different": "Bizni nimasi bilan farq qiladi",
+  "choose": "Nima uchun bizni tanlaysiz",
+  "quotes": "bepul takliflar",
+  "easy_quotes": "Tez qaytarish vaqtlari bilan oson so'rov jarayoni",
+  "discuss": "Haqida muhokama qilaylik",
+  "next": "Sizning keyingi loyihangiz",
+  "contact_btn": "Biz bilan bog'lanish",
+  "f_name": "Ism",
+  "l_name": "Familiya",
+  "email": "Pochta",
+  "phone": "Telefon raqam",
+  "subject": "Mahsulot",
+  "send_btn": "Jo'natish",
+  "unlike": "boshqa hech narsadan farqli o'laroq",
+  "top_products": "YUQORI TAShQI MAHSULOTLAR",
+  "view_btn": "mahsulotni ko'rish",
+  "know_btn": "ko'proq bilish"
 }

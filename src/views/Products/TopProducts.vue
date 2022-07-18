@@ -2,8 +2,8 @@
   <section class="top-products py-10">
     <div class="row">
       <div class="text-center mb-5">
-        <h1 class="text-2xl">unline anything else</h1>
-        <h1 class="text-5xl text-brand uppercase">top exterior products</h1>
+        <h1 class="text-2xl">{{ $t('unlike') }}</h1>
+        <h1 class="text-5xl text-brand uppercase">{{ $t('top_products') }}</h1>
       </div>
       <swiper :navigation="true"
               :modules="modules"
@@ -16,7 +16,7 @@
           <h1 class="mb-3 text-xl">{{ item.title }}</h1>
           <img class="w-full h-80 object-cover" :src="item.img" alt="">
           <button class="text-left flex items-center uppercase mt-3">
-            view product
+            {{ $t('view_btn') }}
             <span class="ml-5 border-2 border-gray rounded-full px-2">&#10095;</span>
           </button>
         </swiper-slide>

@@ -7,15 +7,15 @@
           <img src="@/assets/images/pro_header.jpg" class="w-full h-96 object-cover" alt="">
         </div>
         <div class="w-[38%] text-left flex-col gap-4 flex md:w-full">
-          <h2 class="text-2xl">Beautiful wood siding</h2>
-          <h1 class="text-7xl md:text-4xl">Enhance your architecture</h1>
+          <h2 class="text-2xl">{{ $t('hero.title') }}</h2>
+          <h1 class="text-6xl md:text-4xl">{{ $t('hero.subtitle') }}</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur culpa, dolores, doloribus eaque
             laboriosam nesciunt quas quia recusandae repellendus, ut voluptas voluptatum. Mollitia, qui, quisquam! Aut
             blanditiis mollitia odio quod!
           </p>
-          <button class="text-left flex items-center">
-            Learn more
+          <button class="text-left flex items-center uppercase">
+            {{ $t('hero.button') }}
             <span class="ml-5 border-2 border-gray rounded-full px-2">&#10095;</span>
           </button>
         </div>
